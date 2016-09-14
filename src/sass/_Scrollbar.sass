@@ -1,0 +1,51 @@
+/** SASS file re-used from the component BosNaufal/react-scrollbar */
+
+.react-scrollbar-transition
+  transition: all 0.5s ease
+  -moz-transition: all 0.5s ease
+  -webkit-transition: all 0.5s ease
+  -o-transition: all 0.5s ease
+
+  &--scrollbar
+    transition: opacity 0.5s linear
+    -moz-transition: opacity 0.5s linear
+    -webkit-transition: opacity 0.5s linear
+    -o-transition: opacity 0.5s linear
+
+.react-scrollbar
+  &__wrapper
+    margin: 0 auto
+    overflow: hidden
+    position: relative
+    background: white
+
+    &:hover
+      .react-scrollbar
+        &__scrollbar-vertical
+          opacity: 1
+
+
+  &__scrollbar-vertical
+    @extend .react-scrollbar-transition
+    opacity: 0.5
+    position: relative
+    background: transparent
+
+    &:hover
+      background: rgba(0,0,0,0.3)
+
+    .scrollbar
+      position: absolute
+      background: rgba(0,0,0,0.5)
+      cursor: default
+
+  &__scrollbar-vertical
+    width: 20px
+    height: 100%
+    top: 0
+    right: 0
+
+    .scrollbar
+      width: 20px
+
+ 

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sample App</title>
+    <!-- Latest compiled and minified CSS -->
+
+  <style type="text/css">
+.border {
+  border : 1px solid blue;
+}
+.loader {
+  border: 5px solid #AFEEEE;
+  border-radius: 50%;
+  border-top: 5px solid #555;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+ 
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+h1,h2  {
+margin: 0;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 100ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 100ms ease-in;
+}
+
+.example-appear {
+  opacity: 0.01;
+  transition: opacity 1s ease-in;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+}
+
+  </style>
+  </head>
+  <body>
+    <div id='root'>
+    </div>
+    <script src="/static/bundle.js"></script>
+  </body>
+</html>
