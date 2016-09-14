@@ -1,7 +1,7 @@
 {
   "name": "react-virtualgrid",
   "version": "1.0.0",
-  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "description": "Virtual Grid with infinite scrolling",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src"
@@ -53,7 +53,7 @@
   },
     "publishConfig": {
     "registry": "https://registry.npmjs.org/react-virtualgrid"
-    
+
   },
  "license": "MIT"
 }
