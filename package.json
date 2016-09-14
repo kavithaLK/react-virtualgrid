@@ -21,13 +21,8 @@
     "edit",
     "webpack"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
-  },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
-  "devDependencies": {
+   "devDependencies": {
     "babel-core": "6.4.0",
     "babel-eslint": "^4.1.3",
     "babel-loader": "6.2.1",
@@ -57,4 +52,8 @@
     "react-tokeninput": "^2.1.1",
     "style-loader": "^0.13.1"
   }
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/react-virtualgrid
+  }
+}
 }
