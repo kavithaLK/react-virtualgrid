@@ -11,15 +11,11 @@
     "url": "https://github.com/kavithaLK/react-virtualgrid"
   },
   "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack"
+    "react-virtualgrid",
+    "virtualgrid",
+    "infinitescrolling",
+    "infinite",
+    "virtualscrollgrid"
   ],
    "devDependencies": {
     "babel-core": "6.4.0",
@@ -52,7 +48,7 @@
     "style-loader": "^0.13.1"
   },
     "publishConfig": {
-    "registry": "https://registry.npmjs.org/react-virtualgrid"
+    "registry": "https://registry.npmjs.org/"
 
   },
  "license": "MIT"
