@@ -1,6 +1,6 @@
 {
   "name": "react-virtualgrid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Virtual Grid with infinite scrolling",
   "scripts": {
     "start": "node server.js",
