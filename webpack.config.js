@@ -3,10 +3,11 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'eval',
-  entry: [
+   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './src/index'
+    './src/index-example.js',
+    './src/index.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
