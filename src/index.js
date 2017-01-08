@@ -1,1 +1,1 @@
-export { VirtualGrid } from './component/VirtualGrid'
+export { VirtualGrid } from './component/VirtualGrid.js'

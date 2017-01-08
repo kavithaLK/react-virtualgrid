@@ -4,19 +4,18 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
-   entry : [
-	'./src/index.js'
-  ],
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
-  },
+   entry : './src/component/VirtualGrid.js',
+   output: {
+        path: path.join(__dirname, 'dist/umd'),
+        filename: 'bundle.js',
+        library: 'VirtualGrid',
+        libraryTarget: 'umd'
+    },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
   resolve:{
-      extensions:['', '.js', '.jsx', '.scss', '.sass']
+      extensions:['', '.js', '.jsx', '.scss', 'sass']
   },
   module: {
     loaders: [
@@ -31,12 +30,13 @@ module.exports = {
         },
         {
           test: /\.sass$/,
-	  loader: ExtractTextPlugin.extract("style", 'css!sass')
+	  loader: ExtractTextPlugin.extract("style", 'css!sass'),
+	  include: path.join(__dirname, 'src')
         }
     ]
   },
   plugins: [
-        new ExtractTextPlugin('../../virtualgrid.css', {
+        new ExtractTextPlugin('../../virtualgrid-umd.css', {
             allChunks: true
         })
     ]

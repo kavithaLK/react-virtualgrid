@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import VirtualGrid from './component/VirtualGrid';
-export default class AppVirtualGrid extends React.Component {
+import { VirtualGrid } from './component/VirtualGrid';
+export default class AppVirtualGridExample extends React.Component {
 
   constructor(props) {
 	super(props);

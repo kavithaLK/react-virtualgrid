@@ -1,6 +1,38 @@
 {
-  "presets": [
-    "react",
-    "es2015"
-  ]
+	"presets": [
+		"react",
+		"es2015"
+	],
+	"env": {
+		"es6": {
+			"plugins": [
+				[
+					"babel-plugin-transform-require-ignore",
+					{
+						"extensions": [".sass", ".scss"]
+					}
+				]
+			]
+		},
+		"umd": {
+			"plugins": [
+				[
+					"babel-plugin-transform-require-ignore",
+					{
+						"extensions": [".sass", ".scss"]
+					}
+				]
+			]
+		},
+		"commonjs": {
+			"plugins": [
+				[
+					"babel-plugin-transform-require-ignore",
+					{
+						"extensions": [".sass", ".scss"]
+					}
+				]
+			]
+		}
+	}
 }

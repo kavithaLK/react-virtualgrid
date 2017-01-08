@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import  AppVirtualGrid  from './AppVirtualGrid';
+import  AppVirtualGridExample  from './AppVirtualGrid';
 
 
-ReactDOM.render(<AppVirtualGrid />, document.getElementById('root'));
+ReactDOM.render(<AppVirtualGridExample />, document.getElementById('root'));
 

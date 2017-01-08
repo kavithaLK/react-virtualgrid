@@ -4,12 +4,11 @@ import ReactDOM from 'react-dom';
 import _ from 'lodash';
 import  VerticalScrollbar  from  './virtual-scrollbar.js';
 import  {LRUCache} from 'js-lru/lru.js';
-import  ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+//import  ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-require('../sass/_Scrollbar.sass')
+require('./_Scrollbar.sass')
 
-
-class VirtualGrid extends React.Component {
+export class VirtualGrid extends React.Component {
 	constructor(props){
 		super(props);
 		this.initialOffset = -this.props.itemHeight;
@@ -215,13 +214,13 @@ class VirtualGrid extends React.Component {
 		for (var i=0; i<listIndexes.length; i++) {
 			if(this.state.lrucache.get(listIndexes[i])) {
 					listShow.push(
-						<ReactCSSTransitionGroup transitionName="example" transitionAppear={true}  
-						transitionAppearTimeout={100}
-						transitionEnterTimeout={10}
-						transitionLeaveTimeout={10}
-						>
+						// <ReactCSSTransitionGroup transitionName="example" transitionAppear={true}  
+						// transitionAppearTimeout={100}
+						// transitionEnterTimeout={10}
+						// transitionLeaveTimeout={10}
+						// >
 						<div style={itemStyle} key={listIndexes[i]}>{this.state.lrucache.get(listIndexes[i])}</div>
-						</ReactCSSTransitionGroup>
+						//</ReactCSSTransitionGroup>
 						);
 				} else {
 					listShow.push(<div key={listIndexes[i]} style={itemStyle}><div className="loader"></div></div>);
@@ -299,4 +298,3 @@ VirtualGrid.propTypes = {
 /**
  *
  */
-export default VirtualGrid;
